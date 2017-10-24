@@ -1,18 +1,47 @@
 .home{
-	width: 1616px;
-	height: 2915px;
 	background-color: #fff;
 }
-.home .tip{
+/*头部提示信息样式*/
+.home .tip {
 	width: 100%;
-	height: 35px;
+	height: 30px;
 	background-color: #f3f3f3;
 }
-.tip .t_content{
-	margin: 0 200px;
-	background-color: #f00;
+.tip .t_all{
+	width: 1205px;
+	margin: 0 auto;
 }
-.tip .t_content .left,.tip .t_content .right{
+.tip .t_content{
+	width: 100%;
 	font-size: 12px;
-	line-height: 35px;
+	line-height: 30px;
+}
+.t_content .left{
+	float: left;
+}
+.t_content .left a{
+	margin-left: 12px;
+	color: #39a030;
+}
+.t_content .right{
+	float: right;
+}
+.t_content .right .notip{
+	display: inline-block;
+	width: 20px;
+	height: 10px;
+	background:url(../image/icon.png) no-repeat;
+	background-position:0 0;
+	margin-right: 5px;
+	vertical-align: middle;
+
+}
+/*清除浮动*/
+.clearfix:after{
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
 }
